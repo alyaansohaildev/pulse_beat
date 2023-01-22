@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/list_item_for_adapter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/primary_back"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/first_compo">
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/catamaran"
+            android:text="Sample Text"
+            android:maxEms="5"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/music_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:text="Rails"
+
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/first_compo"
+        android:layout_alignParentEnd="true"
+        android:baselineAligned="true"
+        android:layout_centerVertical="true">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:tint="@color/white"
+            android:id="@+id/add_to_queue"
+            android:src="@drawable/ic_baseline_playlist_add_24"
+            android:layout_marginEnd="5dp"
+            />
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            android:layout_width="40dp"
+            android:layout_toStartOf="@id/add_to_queue"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:layout_marginEnd="10dp"
+            android:theme="@style/WhiteAccent"
+            android:visibility="invisible"
+            />
+        <ImageButton
+            android:id="@+id/play_compo"
+            android:layout_width="40dp"
+            android:layout_toStartOf="@id/add_to_queue"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:background="@color/transparent"
+            android:tint="@color/white"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_play_arrow_24"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

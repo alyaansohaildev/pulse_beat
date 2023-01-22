@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint" tools:targetApi="lollipop">@color/primary_icon_music_player</item>
+        <item name="android:progressTint" tools:targetApi="lollipop">@color/primary_icon_music_player</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/black</item>
+    </style>
+    <style name="WhiteAccent">
+        <item name="colorAccent">@color/white</item> <!-- Whatever color you want-->
+    </style>
+</resources>
